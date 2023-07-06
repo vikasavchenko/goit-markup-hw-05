@@ -64,7 +64,9 @@ header,
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -179,6 +181,7 @@ footer .logo-text {
 .address-item a:hover, .address-item a:focus {
     color: var(--ocean, #404BBF);
 }
+
 /* Hero section */
 .title {
     max-width: 496px;
@@ -324,7 +327,9 @@ footer .logo-text {
 
 .team-item {
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .member-info {
@@ -383,6 +388,8 @@ footer .logo-text {
 .customers-icons-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon-link {
@@ -457,6 +464,7 @@ footer .logo-text {
     height: 100%;
     border-radius: 50%;
     padding: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link {
@@ -486,6 +494,9 @@ footer .logo-text {
     height: 100%;
 
     background-color: var(--navyblue-modal);
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
 }
 
 .backdrop.is-hidden {
@@ -500,18 +511,21 @@ footer .logo-text {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 584px;
+    min-height: 584px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     border-radius: 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
     background-color: var(--dairy);
 }
 
 .modal-btn {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 
     position: absolute;
     top: 24px;
@@ -519,13 +533,22 @@ footer .logo-text {
 
     width: 24px;
     height: 24px;
-    padding: 8px;
+    padding: 0;
 
     border-radius: 50%;
     cursor: pointer;
 
     border: 1px solid rgba(0, 0, 0, 0.10);
     background-color: var(--cornflower);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--ocean);
+    border: none;
 }
 
 .modal-icon {
@@ -533,6 +556,7 @@ footer .logo-text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     fill: var(--navyblue);
 }
@@ -555,6 +579,11 @@ footer .logo-text {
     padding: 12px 24px;
     border: 1px solid var(--cornflower);
     border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -562,7 +591,9 @@ footer .logo-text {
     color: var(--white);
     background-color: var(--ocean);
     border: 1px solid transparent;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .project-title {
@@ -602,11 +633,14 @@ footer .logo-text {
 
 .project-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
 .project-link:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project {
@@ -615,7 +649,9 @@ footer .logo-text {
 
 .project:hover,
 .project:focus {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .project-item-box {
@@ -641,8 +677,9 @@ footer .logo-text {
     transition: transform 250ms;
 }
 
-.project-link:hover .overlay {
-    transform: translateY(0);
+.project-link:hover .overlay,
+.project-link:focus .overlay {
+    transform: translateY(0%);
 }
 
 .overlay-text {
