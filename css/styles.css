@@ -662,6 +662,12 @@ footer .logo-text {
     overflow: hidden;
 }
 
+.project-info {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+}
+
 /* Overlay */
 
 .overlay {
@@ -689,12 +695,11 @@ footer .logo-text {
 
 .overlay-text {
     font-size: 16px;
-    color: var(--cloud);
     line-height: 1.5;
-}
+    letter-spacing: 0.02em; 
 
-.project-info {
-    padding: 32px 16px;
-    border: 1px solid var(--cornflower);
-    border-top: none;
+    padding: 40px 32px;
+    color: var(--cloud);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
