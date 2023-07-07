@@ -152,6 +152,7 @@ footer .logo-text {
 .address-item a {
     font-weight: 400;
     color: var(--slate);
+    text-decoration: none;
 }
 
 .nav-item a:hover, 
