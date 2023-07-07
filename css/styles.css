@@ -139,15 +139,12 @@ footer .logo-text {
 }
 
 .nav-item a {
-    position: relative;
-
     font-weight: 500;
     color: var(--navyblue);
 }
 
 .nav-item:first-of-type>a {
     color: var(--ocean, #2E2F42);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-item-link {
@@ -166,6 +163,12 @@ footer .logo-text {
     color: var(--ocean, #404BBF);
 }
 
+.nav-item-link {
+    position: relative;
+    color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-item-link:hover::after,
 .nav-item-link:focus::after {
     content: "";
@@ -178,11 +181,6 @@ footer .logo-text {
 
     background: var(--ocean);
     border-radius: 2px;
-}
-
-.nav-item {
-    color: var(--ocean);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hero section */
