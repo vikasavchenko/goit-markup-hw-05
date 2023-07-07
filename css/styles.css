@@ -141,6 +141,8 @@ footer .logo-text {
 .nav-item a {
     font-weight: 500;
     color: var(--navyblue);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-item-link {
